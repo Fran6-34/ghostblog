@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de BootContact</title>
+    <link rel="stylesheet" href="boot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        .banner {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .form-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 50px;
+            min-height: 80vh;
+        }
+
+        .form-container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            border: 30px solid transparent;
+            border-image: linear-gradient(to right, #D5006D, #9C27B0, #4DB6AC) 30 stretch;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            margin: 50px auto;
+            max-height: 700px;
+            overflow: hidden;
+            margin-bottom: 90px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        button[type="submit"] {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="banner">
+        <div class="banner-content">
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Author</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Portal</a></li>
+                </ul>
+            </nav>
+            <div class="title">
+                <h1>Contact</h1>
+            </div>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><i class="fa-brands fa-facebook-f social-icon"></i></li>
+                    <li class="nav-item"><i class="fab fa-twitter"></i></li>
+                    <li class="nav-item"><a href="bootcontact.html" target="_blank" class="btn btn-light">Subscribe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-wrapper">
+        <div class="form-container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="website">Your Website</label>
+                        <input type="url" id="website" name="website" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>When is the best time of day to reach you?</label>
+                        <div>
+                            <input type="radio" id="morning" name="time" value="morning">
+                            <label for="morning">Morning</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="evening" name="time" value="evening">
+                            <label for="evening">Evening</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Would you like to receive our email newsletter?</label>
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            <label for="newsletter">Sure!</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="left">Ghost @ 2021</div>
+        <div class="center">Data & privacy - Contact - Contribute</div>
+        <div class="right">Powered by Ghost</div>
+    </footer>
+</body>
+
+</html>

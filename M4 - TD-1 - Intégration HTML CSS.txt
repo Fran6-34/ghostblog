@@ -1,0 +1,85 @@
+
+################################################################################
+                             Ghost Blog (Complément)
+################################################################################
+
+Réaliser une version du projet en HTML/CSS (Pur) et une version avec Bootstrap
+Les ranger respectivement dans les dossiers :
+
+    - <OneDrivePerso>/Evals/M4 - Integration Web/GhostBlog_HtmlCss
+    - <OneDrivePerso>/Evals/M4 - Integration Web/GhostBlog_Bootstrap
+
+------------------------------------------------------------
+Gitlab (Facultatif)
+
+    N'oubliez pas de créer des branches de features et de commit régulièrement
+    Vous réaliserez les deux versions sur le même dépôt
+    N'oubliez pas le README.md et le .gitignore (Voir first_site)
+    Les versions finales seront mergées sur la branche 'main'
+
+------------------------------------------------------------
+Objectifs
+
+    - Concevoir une interface utilisateur esthétique et fonctionnelle
+    - Produire une structure HTML cohérente, en respectant la sémantique
+      et les recommandations du W3C.
+    - Rendre la page accessible et adaptable sur tous les supports :
+      Mobile, tablette et desktop (responsive design)
+    - Optimiser la page pour le référencement naturel SEO
+
+------------------------------------------------------------
+SEO et Accessibilité
+
+    - Utilisez des balises méta pour le titre, la description et les mots-clés
+      Tip : Google search : "css meta description"
+    - Structurez le contenu avec des titres (h1, h2, etc.) de manière logique.
+    - Utilisez des mots-clés relatifs au site Ghost Blog.
+
+------------------------------------------------------------
+Validation
+
+    - Vérifiez la conformité du code avec les standards du W3C
+    - Testez la page sur différents types d'appareils pour assurer
+      le responsive design
+
+------------------------------------------------------------
+Les icones (Font Awesome)
+
+    Les icones utilisables sont issues de la bibliothèque Font Awesome,
+    dont le lien CDN à ajouter dans le fichier index.html est le suivant :
+
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
+
+    Liste d'icones utilisables :
+        <i class="fas fa-chevron-circle-down"></i>
+        <i class="fas fa-briefcase fa-2x"></i>
+        <i class="far fa-clock fa-2x"></i>
+        <i class="far fa-star fa-2x"></i>
+        <i class="far fa-heart fa-2x"></i>
+        <i class="fas fa-map-marker-alt fa-2x"></i>
+        <i class="fas fa-mobile-alt fa-2x"></i>
+        <i class="far fa-envelope"></i>
+        <i class="fas fa-fax fa-2x"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+
+    Exemple :
+
+        <p>Icone d'une enveloppe : <i class="far fa-envelope"></i></p>
+
+------------------------------------------------------------
+Date de Remise
+
+    Le délai de remise du projet est fixé à 48H (Mardi 25 septembre à 23h59)
+
+------------------------------------------------------------
+Conseils
+
+    - N'oubliez pas dde faire vos test dans un fichier séparé pour éviter
+      de casser le projet sur lequel vous travaillez
+
+################################################################################
+
+Bon codage et bon courage ! 😉

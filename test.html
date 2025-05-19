@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 70px; /* Espace en bas de la page */
+      background-color: white;
+    }
+
+    .banner {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer {
+      width: 100%;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin-top: 20px; /* Espace au-dessus de la bannière du bas */
+    }
+
+    .form-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      margin-top: 50px;
+      min-height: 80vh;
+    }
+
+    .form-container {
+      max-width: 800px;
+      width: 100%;
+      padding: 20px;
+      border: 30px solid transparent;
+      border-image: linear-gradient(to right, #D5006D, #9C27B0, #4DB6AC) 30 stretch;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      margin: 50px auto;
+      max-height: 700px;
+      overflow: hidden;
+      margin-bottom: 90px; /* Espace en bas du formulaire */
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      flex: 1;
+      margin-right: 15px;
+    }
+
+    .form-group:last-child {
+      margin-right: 0;
+    }
+
+    label {
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"] {
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: calc(100% - 12px);
+      margin-bottom: 15px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: white;
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="banner">
+    <div class="banner-content">
+      <nav class="nav-left">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Collection</li>
+          <li>Author</li>
+          <li>Portal</li>
+        </ul>
+      </nav>
+      <div class="title">
+        <h1>Contact</h1>
+      </div>
+      <nav class="nav-right">
+        <ul>
+          <li><i class="fa-brands fa-facebook-f social-icon"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><a href="contact.html" target="_blank"><button>Subscribe</button></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="form-wrapper">
+    <div class="form-container">
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="website">Your Website</label>
+            <input type="url" id="website" name="website">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>When is the best time of day to reach you?</label>
+            <div>
+              <input type="radio" id="morning" name="time" value="morning">
+              <label for="morning">Morning</label>
+            </div>
+            <div>
+              <input type="radio" id="evening" name="time" value="evening">
+              <label for="evening">Evening</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Would you like to receive our email newsletter?</label>
+            <div>
+              <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+              <label for="newsletter">Sure!</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="left">Ghost @ 2021</div>
+    <div class="center">Data & privacy - Contact - Contribute</div>
+    <div class="right">Powered by Ghost</div>
+  </div>
+
+</body>
+
+</html>
